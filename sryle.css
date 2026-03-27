@@ -1,0 +1,179 @@
+/* =========================
+   CSS VARIABLES (THEME)
+========================= */
+:root {
+  --primary: #38bdf8;
+  --secondary: #1e293b;
+  --background: #0f172a;
+  --text: #f1f5f9;
+
+  --font-main: Arial, sans-serif;
+  --font-size: 16px;
+}
+
+/* =========================
+   RESET
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =========================
+   BODY
+========================= */
+body {
+  font-family: var(--font-main);
+  font-size: var(--font-size);
+  background: var(--background);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* =========================
+   HEADER / NAV (FLEXBOX)
+========================= */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--secondary);
+  padding: 15px 30px;
+}
+
+header h1 {
+  color: var(--primary);
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+/* HOVER & FOCUS */
+nav a:hover,
+nav a:focus {
+  color: var(--primary);
+  outline: none;
+}
+
+/* =========================
+   HERO
+========================= */
+.hero {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.hero img {
+  width: 150px;
+  border-radius: 50%;
+  border: 3px solid var(--primary);
+  margin-bottom: 15px;
+}
+
+/* =========================
+   SECTIONS
+========================= */
+section {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background: var(--secondary);
+  border-radius: 10px;
+}
+
+/* =========================
+   GRID (PROJECT STYLE)
+========================= */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.grid div {
+  background: #334155;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* =========================
+   LISTS
+========================= */
+ul {
+  padding-left: 20px;
+}
+
+/* =========================
+   LINKS
+========================= */
+a {
+  color: var(--primary);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   FORM (MOBILE FRIENDLY)
+========================= */
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  background: var(--primary);
+  color: #000;
+  cursor: pointer;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: var(--secondary);
+  margin-top: 20px;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+@media (max-width: 768px) {
+
+  header {
+    flex-direction: column;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding: 20px;
+  }
+}
