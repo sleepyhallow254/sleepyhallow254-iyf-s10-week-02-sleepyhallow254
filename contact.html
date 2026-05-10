@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - Joe Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Contact Section -->
+  <section id="contact" class="card">
+    <h2>Contact</h2>
+
+    <form id="contactForm" class="contact-form">
+      <label>
+        <span>Your Name</span>
+        <input name="name" type="text" placeholder="Your Name" required />
+      </label>
+
+      <label>
+        <span>Your Email</span>
+        <input name="email" type="email" placeholder="Your Email" required />
+      </label>
+
+      <label>
+        <span>Your Message</span>
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      </label>
+
+      <button type="submit" class="btn btn-primary">Send</button>
+      <p id="formStatus" class="form-status" aria-live="polite"></p>
+    </form>
+
+    <p class="contact-email">
+      Email: <a id="mailtoLink" href="mailto:your-email@example.com">your-email@example.com</a>
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Joe Portfolio</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

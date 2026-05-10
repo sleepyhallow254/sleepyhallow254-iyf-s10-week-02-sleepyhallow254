@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skills - Joe Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="skills.html" class="active">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Skills Section -->
+  <section id="skills" class="card">
+    <h2>Skills</h2>
+
+    <div class="skills-container" role="list">
+      <div role="listitem" class="skill-item">
+        <button
+          type="button"
+          class="skill"
+          aria-expanded="false"
+          aria-controls="skill-example-html"
+          data-skill-target="skill-example-html"
+        >
+          HTML
+        </button>
+        <div id="skill-example-html" class="skill-example" hidden>
+          <p><strong>Example:</strong> <code><h1>Hello</h1></code> creates a heading on a webpage.</p>
+        </div>
+      </div>
+
+      <div role="listitem" class="skill-item">
+        <button
+          type="button"
+          class="skill"
+          aria-expanded="false"
+          aria-controls="skill-example-css"
+          data-skill-target="skill-example-css"
+        >
+          CSS
+        </button>
+        <div id="skill-example-css" class="skill-example" hidden>
+          <p><strong>Example:</strong> <code>p { color: red; }</code> makes all paragraphs red.</p>
+        </div>
+      </div>
+
+      <div role="listitem" class="skill-item">
+        <button
+          type="button"
+          class="skill"
+          aria-expanded="false"
+          aria-controls="skill-example-js"
+          data-skill-target="skill-example-js"
+        >
+          JavaScript
+        </button>
+        <div id="skill-example-js" class="skill-example" hidden>
+          <p><strong>Example:</strong> <code>document.title = "My Page";</code> changes the tab title.</p>
+        </div>
+      </div>
+
+      <div role="listitem" class="skill-item">
+        <button
+          type="button"
+          class="skill"
+          aria-expanded="false"
+          aria-controls="skill-example-github"
+          data-skill-target="skill-example-github"
+        >
+          GitHub
+        </button>
+        <div id="skill-example-github" class="skill-example" hidden>
+          <p><strong>Example:</strong> push code to a repo using <code>git push</code> and collaborate via pull requests.</p>
+        </div>
+      </div>
+
+      <div role="listitem" class="skill-item">
+        <button
+          type="button"
+          class="skill"
+          aria-expanded="false"
+          aria-controls="skill-example-vscode"
+          data-skill-target="skill-example-vscode"
+        >
+          VS Code
+        </button>
+        <div id="skill-example-vscode" class="skill-example" hidden>
+          <p><strong>Example:</strong> use extensions and <code>Ctrl + P</code> to quickly open files and run tasks.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Joe Portfolio</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
